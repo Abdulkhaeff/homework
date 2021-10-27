@@ -180,24 +180,130 @@
 // console.log(Masofa)
 
 
-21 masala
-var chup = 22
-var uy = 4
-var urta = chup / uy
-var uycha = urta
-var foydalanuvchi = 5 * 5 + 1
-console.log(foydalanuvchi)
+// 21 masala
+// var chup = 22
+// var uy = 4
+// var urta = chup / uy
+// var uycha = urta
+// var foydalanuvchi = 5 * 5 + 1
+// console.log(foydalanuvchi)
 
 
 
-var a = 30;
-var b = Number('129');
-var c = (a + b);
+// var a = 30;
+// var b = Number('129');
+// var c = (a + b);
 
-console.log (c.toString().length);
+// console.log (c.toString().length);
 
-var a = '30'
-var b = '60'
+// var a = '30'
+// var b = '60'
+//  var c = +a * +b;
+//  console.log(c.toString().length);
 
-console.log (a.valueOf(b));
-console.log (b.valueOf(a));
+
+
+
+
+
+
+/*************** Task №1 ************** */
+// Function for Method pow
+
+// function pow(a, b) {
+//     return a ** b;
+// }
+
+// console.log(pow(4, 2));
+
+// Function for Method sqrt
+
+// function sqrt(a) {
+//     return a ** 0.5;
+// }
+
+// console.log(sqrt(81));
+
+// Function for Method cbrt
+
+// function cbrt(a) {
+//   return (a ** (1/3));
+// }
+
+//  console.log(cbrt(27));
+
+// Function for Method abs
+
+// function abs(a) {
+// return (a** 2) ** 0.5 
+// }
+// console.log(abs(-12.5));
+
+// Function for Method round
+
+// function round(a) {
+//    return (a).toFixed(0);
+
+// }
+// console.log(round(1.5))
+
+// Function for Method floor 
+
+// function floor(a) {
+//     return parseInt(a);
+// }
+// console.log(floor(8.9))
+
+// Function for Method floor2 
+
+// function floor(a) {
+//   return (a - 0.5).toFixed(0);
+// }
+// console.log(floor(6.001));
+
+
+
+// Function for Method ceil
+
+// function ceil(a) {
+//     return (a + 0.5).toFixed(0);
+// }
+// console.log(ceil(1.001));
+
+
+/2-masala
+var weCount = 0;
+var aCount = 0;
+var bCount = 0;
+
+let text = 'welcome webbrain';
+text=text.repeat(10);
+
+function weSanagich(text){
+    var index = text.indexOf("we"); 
+    weCount++;
+    text=text.slice(index+2);
+    text.includes('we') && weSanagich(text);
+}
+weSanagich(text);
+
+function a_Sanagich(text){
+    var index = text.indexOf("a"); 
+    aCount++;
+    text=text.slice(index+1);
+    text.includes('a') && a_Sanagich(text);
+}
+a_Sanagich(text);
+
+function b_Sanagich(text){
+    var index = text.indexOf("b"); 
+    bCount++;
+    text=text.slice(index+1);
+    text.includes('b') && b_Sanagich(text);
+}
+b_Sanagich(text);
+
+console.log(`we: ${weCount}ta 
+a: ${aCount}ta
+b: ${bCount}ta`);
+
